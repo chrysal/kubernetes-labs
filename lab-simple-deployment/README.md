@@ -25,7 +25,9 @@ View all resources in all namespaces at once with --all-namespaces or -A
 ```
 How to see the yaml of the deployment
 ```shell script
-    k get deployment firstpod -o yaml 
+    k get deployment firstpod -o yaml
+    # save as a file
+    k get deployment firstpod -o yaml > first.yaml 
 ```
 
 
