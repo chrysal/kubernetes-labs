@@ -1,12 +1,7 @@
-# Lab introduction 
-# Basic commands
-Creer un pod en ligne de command
-``` kubectl run --generator=run-pod/v1 nginx --image=nginx```   
-Creer un pod avec un fichier YAML  
-``kubectl create -f pod-definition.yaml``  
-Verifier  
-``kubectl get pods``  
-``kubectl describe pod myapp-pod``  
+# Lab check install
+## Basic commands
+Verifier l'etat des nodes   
+``` k get nodes```   
+editer la configuration d'un node  
+```k describe node k8s-white-node-1 ```  
 
-Comment gerer du code yaml sans creer l'objet Kubernetes
-``kubectl run --generator=run-pod/v1 nginx --image=nginx --dry-run -o yaml``
